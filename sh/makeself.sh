@@ -10,7 +10,7 @@ make_entry_shell()
 
 	echo "pack_checksum=${pack_checksum}"
 	echo "pack_filesize=${pack_filesize}"
-	echo '
+	echo 'set -e
 	tmp_dir=/tmp/${USER}/$$
 	mkdir -p ${tmp_dir}
 	echo "extract to ${tmp_dir} ..."
